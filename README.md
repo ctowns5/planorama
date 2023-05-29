@@ -4,7 +4,7 @@ This is a 1 day planner which shows the current day broken into hours between 8A
 
 ## Here is a screenshot of the app
 
-![picture of the website](./assets/images/planorama.jpg)
+![picture of the website](/Assets/images/planorama.jpg)
 
 ### Github : https://github.com/ctowns5/planorama
 
