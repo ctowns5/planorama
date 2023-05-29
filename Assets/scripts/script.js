@@ -18,13 +18,10 @@ $(document).ready(function () {
   $("#hour14 .description").val(localStorage.getItem("hour14"));
   $("#hour15 .description").val(localStorage.getItem("hour15"));
   $("#hour16 .description").val(localStorage.getItem("hour16"));
-
   function hourTracker() {
     var currentHour = dayjs().hour();
-
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("hour")[1]);
-
       //used to check past, present or future
       if (blockHour < currentHour) {
         $(this).addClass("past");
