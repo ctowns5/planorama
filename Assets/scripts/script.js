@@ -18,13 +18,13 @@ $(document).ready(function () {
   function hourTracker() {
     var currentHour = dayjs().hour();
     $(".time-block").each(function () {
-      var blockHour = parseInt($(this).attr("id").split("hour")[1]);
+      var hourBlock = parseInt($(this).attr("id").split("hour")[1]);
       //used to check past, present or future
-      if (blockHour < currentHour) {
+      if (hourBlock < currentHour) {
         $(this).addClass("past");
         $(this).removeClass("future");
         $(this).removeClass("present");
-      } else if (blockHour === currentHour) {
+      } else if (hourBlock === currentHour) {
         $(this).removeClass("past");
         $(this).addClass("present");
         $(this).removeClass("future");
